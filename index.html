@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Bushra 💖🐮🐱</title>
+    <style>
+        body {
+            background-color: #fdf2f8; /* Soft pastel pink */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #4a5568;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1, h2 {
+            color: #e11d48; /* Deep rose pink */
+        }
+
+        .header-msg {
+            color: #e11d48;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(225, 29, 72, 0.2);
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            max-width: 480px;
+            width: 85%;
+            backdrop-filter: blur(5px);
+            border: 2px solid #fffbeb;
+            position: relative;
+            z-index: 10;
+        }
+
+        .animal-cluster {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .main-animal {
+            font-size: 4rem;
+            animation: bounce 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-15px); }
+        }
+
+        .side-animals {
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .cow-expression {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.15rem;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #e11d48;
+            font-weight: bold;
+        }
+
+        .button-group {
+            position: relative;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 14px 28px;
+            font-size: 1.15rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn-yes {
+            background-color: #e11d48;
+            color: white;
+            z-index: 2;
+        }
+
+        .btn-yes:hover {
+            background-color: #be123c;
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(225, 29, 72, 0.4);
+        }
+
+        .btn-no-container {
+            position: absolute;
+            top: 0;
+            left: calc(50% + 110px);
+        }
+
+        .btn-no {
+            background-color: #fff1f2;
+            color: #be123c;
+            border: 2px solid #be123c;
+            position: absolute;
+        }
+
+        .no-interaction-text {
+            font-size: 0.9rem;
+            color: #f43f5e;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            margin-top: -15px;
+        }
+
+        .animal-chase {
+            position: absolute;
+            font-size: 1.2rem;
+            transition: all 0.2s ease;
+            opacity: 0;
+        }
+
+        #success-screen {
+            display: none;
+        }
+
+        .success-text {
+            font-size: 1.3rem;
+        }
+
+        .stampede-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .animal-confetti {
+            position: absolute;
+            font-size: 2rem;
+            animation: fall 3s linear;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+        
+        .special-button-container {
+            margin-top: 30px;
+        }
+        
+        .btn-feed {
+            background-color: #fef3c7;
+            color: #d97706;
+            border: 2px solid #d97706;
+        }
+        
+        .btn-feed:hover {
+            background-color: #fde68a;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header-msg">For Bushra 💖🐮🐱</div>
+
+    <!-- The Apology Screen -->
+    <div class="card" id="apology-screen">
+        <div class="animal-cluster">
+            <div class="side-animals">
+                <span class="main-animal">🐮</span>
+                <span class="main-animal">🐱</span>
+            </div>
+            <div class="side-animals">
+                <span>🐶</span>
+                <span>🐰</span>
+                <span>🐷</span>
+            </div>
+        </div>
+        <div class="cow-expression">*(I'm so sorry, Bushra! My eyes just stamped shut! 😴)*</div>
+        <h1>I'm So Sorry, Bushra! 😴</h1>
+        <p>
+            You mean everything to me, Bushra, and I am so truly sorry I drifted off without a proper goodnight last night. It was an accidental sleep <span class="highlight">stampede</span>, and I didn't mean to ignore you! Will you please forgive your sleepy herd-leader? <br><br>
+            I have gathered these adorable friends to help me apologize and make things right!
+        </p>
+        <div class="button-group">
+            <button class="btn-yes" onclick="acceptApology()">Yes, I Forgive You ❤️</button>
+            <div class="btn-no-container">
+                <button class="btn-no" id="no-btn" onmouseover="dodgeCursor()">No</button>
+            </div>
+            <span class="no-interaction-text" id="no-text">Can't catch me! Mrow!</span>
+            <span class="animal-chase" id="chaser">🐈</span>
+        </div>
+    </div>
+
+    <!-- The Success Screen -->
+    <div class="card" id="success-screen">
+        <div class="animal-cluster">
+            <span class="main-animal">🥰✨🐮</span>
+            <span class="main-animal">🐱✨💖</span>
+        </div>
+        <h2>THANK YOU, BUSHRA! 🥰</h2>
+        <p class="success-text">
+            My whole her<span class="highlight">d t</span>hanks you! You are the best. I promise to corral my tiredness and send you a proper goodnight text next time! I love you! Also, here is a special animal button just for you!
+        </p>
+        <div class="special-button-container">
+            <button class="btn-feed" onclick="feedCow()">Feed The Cow! 🌾</button>
+        </div>
+    </div>
+
+    <!-- Container for animal confetti -->
+    <div class="stampede-container" id="stampede-zone"></div>
+
+    <script>
+        const animals = ['🐱', '🐮', '🐶', '🐷', '🐰', '🐥', '🐻'];
+
+        function dodgeCursor() {
+            const btn = document.getElementById('no-btn');
+            const noText = document.getElementById('no-text');
+            const chaser = document.getElementById('chaser');
+            
+            const range = 150;
+            const randomX = Math.floor(Math.random() * (range * 2 + 1)) - range;
+            const randomY = Math.floor(Math.random() * (range / 2 + 1)) - (range / 4);
+
+            btn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+            noText.style.opacity = 1;
+            chaser.style.opacity = 1;
+            chaser.style.transform = `translate(${randomX + 50}px, ${randomY}px)`;
+        }
+
+        function acceptApology() {
+            document.getElementById('apology-screen').style.display = 'none';
+            document.getElementById('success-screen').style.display = 'block';
+            document.body.style.backgroundColor = '#fffbeb'; 
+            
+            createStampede();
+        }
+
+        function createStampede() {
+            const zone = document.getElementById('stampede-zone');
+            const count = 50; 
+
+            for (let i = 0; i < count; i++) {
+                const animal = document.createElement('div');
+                animal.className = 'animal-confetti';
+                animal.innerText = animals[Math.floor(Math.random() * animals.length)];
+                
+                animal.style.left = `${Math.random() * 100}vw`;
+                animal.style.animationDelay = `${Math.random() * 2}s`;
+                animal.style.animationDuration = `${2 + Math.random() * 3}s`; 
+                
+                zone.appendChild(animal);
+
+                setTimeout(() => {
+                    zone.removeChild(animal);
+                }, 5000); 
+            }
+        }
+        
+        function feedCow() {
+            const cowEmoji = document.querySelector('#success-screen .main-animal');
+            cowEmoji.style.transition = 'transform 0.5s ease';
+            cowEmoji.style.transform = 'scale(1.5)';
+            
+            setTimeout(() => {
+                cowEmoji.style.transform = 'scale(1)'; 
+            }, 600);
+        }
+    </script>
+
+</body>
+</html>
