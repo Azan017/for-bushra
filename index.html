@@ -20,6 +20,7 @@
             position: relative;
         }
 
+        /* Floating background paws */
         .bg-paws {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -50,6 +51,16 @@
             font-size: 4rem;
             margin-bottom: 10px;
             animation: gentle-bounce 2s infinite alternate;
+        }
+
+        .kitten-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 15px 0;
+            display: inline-block;
         }
 
         h1 {
@@ -134,15 +145,6 @@
             margin-top: -10px;
             margin-bottom: 20px;
         }
-        
-        /* Styling specifically for the Tenor embed */
-        .gif-container {
-            max-width: 250px;
-            margin: 15px auto;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
     </style>
 </head>
 <body>
@@ -174,21 +176,14 @@
     <div class="card" id="success-screen">
         <h1>Surprise! 🎀🐈</h1>
         
-        <!-- Official Tenor Embed Code for your specific GIF -->
-        <div class="gif-container">
-            <div class="tenor-gif-embed" data-postid="700604971257527963" data-share-method="host" data-aspect-ratio="1" data-width="100%">
-                <a href="https://tenor.com/view/miloie-cat-kitten-cry-meow-gif-700604971257527963">Miloie Cat GIF</a>
-            </div>
-        </div>
+        <!-- Reliable direct image link of a tiny, cute kitten -->
+        <img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?auto=format&fit=crop&w=500&q=80" alt="Tiny Kitten" class="kitten-img">
         
         <p>
             Thank you, Bushra! 🥰 You are the absolute best. <br><br>
-            Here is your very own digital baby ginger kitten! I promise I will always send a goodnight text from now on. Don't worry, I am totally prepared to spoil this little one—I already have all the best wet food and dry food ready to go!
+            Here is your very own digital baby kitten! I promise I will always send a goodnight text from now on. Don't worry, I am totally prepared to spoil this little one—I already have all the best wet food and dry food ready to go!
         </p>
     </div>
-
-    <!-- Script to load the Tenor GIF -->
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
     <script>
         function acceptApology() {
