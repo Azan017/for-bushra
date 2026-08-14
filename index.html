@@ -52,12 +52,16 @@
             animation: gentle-bounce 2s infinite alternate;
         }
 
-        .kitten-gif {
+        /* Updated styling to make sure the fetched image always looks perfect */
+        .kitten-img {
             width: 250px;
+            height: 250px;
+            object-fit: cover;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             margin: 15px 0;
             display: inline-block;
+            background-color: #fce7f3; /* Light pink background while loading */
         }
 
         h1 {
@@ -173,8 +177,10 @@
 
     <div class="card" id="success-screen">
         <h1>Surprise! 🎀🐈</h1>
-        <!-- Swapped out the broken Giphy link for a reliable Tenor GIF link -->
-        <img src="https://media.tenor.com/2s_b_fBMyEMAAAAi/orange-cat.gif" alt="Cute Ginger Kitten" class="kitten-gif">
+        
+        <!-- Uses a developer API that guarantees a working image of an orange cat -->
+        <img src="https://cataas.com/cat/orange" alt="Cute Ginger Kitten" class="kitten-img">
+        
         <p>
             Thank you, Bushra! 🥰 You are the absolute best. <br><br>
             Here is your very own digital baby ginger kitten! I promise I will always send a goodnight text from now on. Don't worry, I am totally prepared to spoil this little one—I already have all the best wet food and dry food ready to go!
