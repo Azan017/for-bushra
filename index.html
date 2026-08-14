@@ -52,18 +52,6 @@
             animation: gentle-bounce 2s infinite alternate;
         }
 
-        /* Updated styling to make sure the fetched image always looks perfect */
-        .kitten-img {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin: 15px 0;
-            display: inline-block;
-            background-color: #fce7f3; /* Light pink background while loading */
-        }
-
         h1 {
             color: #db2777; 
             margin-top: 10px;
@@ -146,7 +134,15 @@
             margin-top: -10px;
             margin-bottom: 20px;
         }
-
+        
+        /* Styling specifically for the Tenor embed */
+        .gif-container {
+            max-width: 250px;
+            margin: 15px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
@@ -178,14 +174,21 @@
     <div class="card" id="success-screen">
         <h1>Surprise! 🎀🐈</h1>
         
-        <!-- Uses a developer API that guarantees a working image of an orange cat -->
-        <img src="https://cataas.com/cat/orange" alt="Cute Ginger Kitten" class="kitten-img">
+        <!-- Official Tenor Embed Code for your specific GIF -->
+        <div class="gif-container">
+            <div class="tenor-gif-embed" data-postid="700604971257527963" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+                <a href="https://tenor.com/view/miloie-cat-kitten-cry-meow-gif-700604971257527963">Miloie Cat GIF</a>
+            </div>
+        </div>
         
         <p>
             Thank you, Bushra! 🥰 You are the absolute best. <br><br>
             Here is your very own digital baby ginger kitten! I promise I will always send a goodnight text from now on. Don't worry, I am totally prepared to spoil this little one—I already have all the best wet food and dry food ready to go!
         </p>
     </div>
+
+    <!-- Script to load the Tenor GIF -->
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
     <script>
         function acceptApology() {
