@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Bushra 🌹🥺</title>
+    <title>For Bushra 🐾🥺</title>
     <style>
         body {
-            background-color: #fff1f2; /* Soft rose pink */
+            background-color: #fdf2f8; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
@@ -20,51 +20,40 @@
             position: relative;
         }
 
-        /* Floating background sparkles */
-        .bg-sparkles {
+        .bg-paws {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
             pointer-events: none;
             z-index: 0;
-            opacity: 0.4;
-            font-size: 1.5rem;
+            opacity: 0.15;
+            font-size: 2rem;
         }
         
-        .sparkle1 { position: absolute; top: 15%; left: 10%; animation: float 4s infinite ease-in-out; }
-        .sparkle2 { position: absolute; top: 70%; left: 20%; animation: float 3.5s infinite ease-in-out reverse; }
-        .sparkle3 { position: absolute; top: 20%; right: 15%; animation: float 5s infinite ease-in-out; }
-        .sparkle4 { position: absolute; top: 60%; right: 10%; animation: float 4.2s infinite ease-in-out reverse; }
+        .paw1 { position: absolute; top: 15%; left: 10%; transform: rotate(-20deg); animation: float 4s infinite ease-in-out; }
+        .paw2 { position: absolute; top: 70%; left: 20%; transform: rotate(15deg); animation: float 3.5s infinite ease-in-out reverse; }
+        .paw3 { position: absolute; top: 20%; right: 15%; transform: rotate(30deg); animation: float 5s infinite ease-in-out; }
+        .paw4 { position: absolute; top: 60%; right: 10%; transform: rotate(-10deg); animation: float 4.2s infinite ease-in-out reverse; }
 
         .card {
             background: #ffffff;
             padding: 40px 30px;
             border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(225, 29, 72, 0.15);
+            box-shadow: 0 10px 30px rgba(225, 29, 72, 0.1);
             max-width: 480px;
             width: 85%;
-            border: 2px solid #fda4af; /* Soft rose border */
+            border: 3px dashed #fbcfe8;
             position: relative;
             z-index: 10;
         }
 
-        .main-icon {
+        .sad-cat {
             font-size: 4rem;
             margin-bottom: 10px;
             animation: gentle-bounce 2s infinite alternate;
         }
 
-        .bouquet-img {
-            width: 280px;
-            height: 280px;
-            object-fit: cover;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            margin: 15px 0;
-            display: inline-block;
-        }
-
         h1 {
-            color: #e11d48; /* Deep rose */
+            color: #db2777; 
             margin-top: 10px;
             font-size: 1.8rem;
         }
@@ -76,7 +65,7 @@
         }
 
         .highlight {
-            color: #e11d48;
+            color: #db2777;
             font-weight: bold;
         }
 
@@ -100,14 +89,14 @@
         }
 
         .btn-yes {
-            background-color: #e11d48;
+            background-color: #db2777;
             color: white;
-            box-shadow: 0 5px 15px rgba(225, 29, 72, 0.3);
+            box-shadow: 0 5px 15px rgba(219, 39, 119, 0.3);
             z-index: 2;
         }
 
         .btn-yes:hover {
-            background-color: #be123c;
+            background-color: #be185d;
             transform: scale(1.05);
         }
 
@@ -128,37 +117,53 @@
         }
 
         @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
         }
 
         @keyframes gentle-bounce {
             0% { transform: translateY(0); }
             100% { transform: translateY(-10px); }
         }
-
+        
+        .meow-text {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            font-style: italic;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+        
+        /* Styling specifically for the Tenor embed */
+        .gif-container {
+            max-width: 250px;
+            margin: 15px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
 
-    <div class="bg-sparkles">
-        <div class="sparkle1">✨</div>
-        <div class="sparkle2">✨</div>
-        <div class="sparkle3">✨</div>
-        <div class="sparkle4">✨</div>
+    <div class="bg-paws">
+        <div class="paw1">🐾</div>
+        <div class="paw2">🐾</div>
+        <div class="paw3">🐾</div>
+        <div class="paw4">🐾</div>
     </div>
 
-    <!-- The Apology Screen -->
     <div class="card" id="apology-screen">
-        <div class="main-icon">🥺</div>
+        <div class="sad-cat">😿</div>
+        <div class="meow-text">*sad meow sounds*</div>
         <h1>I'm So Sorry, Bushra!</h1>
         <p>
             I am so truly sorry I fell asleep without saying goodnight to you. My eyes just wouldn't stay open, but I never meant to leave you hanging! <br><br>
-            Will you please forgive your sleepyhead? I brought a <span class="highlight">beautiful bouquet of roses</span> if you say yes...
+            Will you please forgive your sleepyhead? I brought a <span class="highlight">special fluffy surprise</span> if you say yes...
         </p>
         <div class="button-group">
-            <button class="btn-yes" onclick="acceptApology()">I Forgive You 🌹</button>
+            <button class="btn-yes" onclick="acceptApology()">I Forgive You 🐾</button>
             
             <div class="btn-no-wrapper">
                 <button class="btn-no" id="no-btn" onmouseover="dodgeCursor()">No</button>
@@ -166,18 +171,24 @@
         </div>
     </div>
 
-    <!-- The Success Screen -->
     <div class="card" id="success-screen">
-        <h1>For You! 🌹✨</h1>
+        <h1>Surprise! 🎀🐈</h1>
         
-        <!-- Uses a reliable Unsplash image link of a beautiful rose bouquet -->
-        <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=500&q=80" alt="Beautiful Rose Bouquet" class="bouquet-img">
+        <!-- Official Tenor Embed Code for your specific GIF -->
+        <div class="gif-container">
+            <div class="tenor-gif-embed" data-postid="700604971257527963" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+                <a href="https://tenor.com/view/miloie-cat-kitten-cry-meow-gif-700604971257527963">Miloie Cat GIF</a>
+            </div>
+        </div>
         
         <p>
             Thank you, Bushra! 🥰 You are the absolute best. <br><br>
-            Here is your digital bouquet of roses! I promise I will always send a goodnight text from now on. I can't wait to give you some real ones in person!
+            Here is your very own digital baby ginger kitten! I promise I will always send a goodnight text from now on. Don't worry, I am totally prepared to spoil this little one—I already have all the best wet food and dry food ready to go!
         </p>
     </div>
+
+    <!-- Script to load the Tenor GIF -->
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
     <script>
         function acceptApology() {
@@ -187,7 +198,6 @@
 
         function dodgeCursor() {
             const btn = document.getElementById('no-btn');
-            // Calculates random jump coordinates
             const randomX = Math.floor(Math.random() * 300) - 150; 
             const randomY = Math.floor(Math.random() * 200) - 100;
             btn.style.transform = `translate(${randomX}px, ${randomY}px)`;
