@@ -6,7 +6,7 @@
     <title>For Bushra 🐾🥺</title>
     <style>
         body {
-            background-color: #fdf2f8; /* Soft pastel pink */
+            background-color: #fdf2f8; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
@@ -20,7 +20,6 @@
             position: relative;
         }
 
-        /* Floating background paws */
         .bg-paws {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -42,7 +41,7 @@
             box-shadow: 0 10px 30px rgba(225, 29, 72, 0.1);
             max-width: 480px;
             width: 85%;
-            border: 3px dashed #fbcfe8; /* Cute dashed border */
+            border: 3px dashed #fbcfe8;
             position: relative;
             z-index: 10;
         }
@@ -62,7 +61,7 @@
         }
 
         h1 {
-            color: #db2777; /* Deep cute pink */
+            color: #db2777; 
             margin-top: 10px;
             font-size: 1.8rem;
         }
@@ -80,7 +79,7 @@
 
         .button-group {
             position: relative;
-            height: 80px; /* Space for the moving button */
+            height: 80px; 
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -111,14 +110,14 @@
 
         .btn-no-wrapper {
             position: absolute;
-            left: calc(50% + 80px); /* Starts to the right of the Yes button */
+            left: calc(50% + 80px); 
             z-index: 1;
         }
 
         .btn-no {
             background-color: #f3f4f6;
             color: #6b7280;
-            position: absolute; /* Absolute for dodging */
+            position: absolute; 
         }
 
         #success-screen {
@@ -148,7 +147,6 @@
 </head>
 <body>
 
-    <!-- Background Paws -->
     <div class="bg-paws">
         <div class="paw1">🐾</div>
         <div class="paw2">🐾</div>
@@ -156,7 +154,6 @@
         <div class="paw4">🐾</div>
     </div>
 
-    <!-- The Apology Screen -->
     <div class="card" id="apology-screen">
         <div class="sad-cat">😿</div>
         <div class="meow-text">*sad meow sounds*</div>
@@ -174,11 +171,10 @@
         </div>
     </div>
 
-    <!-- The Success Screen -->
     <div class="card" id="success-screen">
         <h1>Surprise! 🎀🐈</h1>
-        <!-- A cute ginger kitten GIF -->
-        <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" alt="Cute Ginger Kitten" class="kitten-gif">
+        <!-- Swapped out the broken Giphy link for a reliable Tenor GIF link -->
+        <img src="https://media.tenor.com/2s_b_fBMyEMAAAAi/orange-cat.gif" alt="Cute Ginger Kitten" class="kitten-gif">
         <p>
             Thank you, Bushra! 🥰 You are the absolute best. <br><br>
             Here is your very own digital baby ginger kitten! I promise I will always send a goodnight text from now on. Don't worry, I am totally prepared to spoil this little one—I already have all the best wet food and dry food ready to go!
@@ -187,19 +183,14 @@
 
     <script>
         function acceptApology() {
-            // Hide apology screen, show success screen
             document.getElementById('apology-screen').style.display = 'none';
             document.getElementById('success-screen').style.display = 'block';
         }
 
         function dodgeCursor() {
             const btn = document.getElementById('no-btn');
-            
-            // Generate random X and Y coordinates to jump to
             const randomX = Math.floor(Math.random() * 300) - 150; 
             const randomY = Math.floor(Math.random() * 200) - 100;
-            
-            // Apply the new position
             btn.style.transform = `translate(${randomX}px, ${randomY}px)`;
         }
     </script>
